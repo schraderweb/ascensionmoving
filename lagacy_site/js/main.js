@@ -222,7 +222,7 @@
   }
 
   /*-------------------------------------
-    On Scroll 
+    On Scroll
     -------------------------------------*/
   $(window).on("scroll", function () {
     // Back Top Button
@@ -255,7 +255,7 @@
   if ($.fn.meanmenu) {
     $("nav#dropdown").meanmenu({
       siteLogo:
-        "<div class='mobile-menu-nav-back'><a class='logo-mobile' href='index.html'><img src='images/logo-main.jpg' alt='logo' class='img-fluid' width='60px'/></a></div>",
+        "<div class='mobile-menu-nav-back'><a class='logo-mobile' href='index-new.html'><img src='images/logo-main.jpg' alt='logo' class='img-fluid' width='60px'/></a></div>",
     });
   }
 
@@ -531,7 +531,7 @@
     }
 
     /*-------------------------------------
-            Slick Slider 
+            Slick Slider
         -------------------------------------*/
     if ($.fn.slick) {
       $(".slick-carousel").each(function () {
