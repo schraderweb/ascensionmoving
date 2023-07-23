@@ -2837,6 +2837,10 @@ nav.template-main-menu > ul > li:hover .template-mega-menu {
   background-color: #093052;
   padding-top: 0;
 }
+.base-color{
+  color: rgb(95,12,12);
+  text-decoration-color: rgb(95,12,12);
+}
 .header-menu.menu-layout4.rt-sticky nav.template-main-menu > ul > li > a {
   padding: 28px 20px;
 }
