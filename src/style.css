@@ -93,7 +93,7 @@ CSS INDEX
 html {
   height: 100%;
   font-size: 0.55rem;
-  font-size: clamp(0.55rem, 0.5rem + 0.24999999999999997vw, 0.65rem);
+  font-size: clamp(0.55rem, 0.5323529411764706rem + 0.09803921568627448vw, 0.65rem);
 }
 
 body {
@@ -15501,4 +15501,24 @@ mark,
 a.text-primary:hover,
 a.text-primary:focus {
   color: #ba8b00 !important;
+}
+
+.card-body {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+.card-body h5 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+  .card-body h5 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
 }
