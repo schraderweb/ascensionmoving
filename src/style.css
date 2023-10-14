@@ -10698,9 +10698,9 @@ div#wrapper.open>.offcanvas-mask {
   background: #102353;
   font-size: 14px;
   color: #fff;
-  margin: auto;
   letter-spacing: 1px;
   cursor: pointer;
+  margin: auto;
   width: 100%;
   max-width: 200px;
 }
@@ -15049,24 +15049,6 @@ img.zoom {
   font-size: 16px;
   color: #000;
   border: 1px solid #000000;
-}
-
-.inptBtn {
-  height: 50px;
-  border: 0;
-  background: #102353;
-  font-size: 14px;
-  color: #fff;
-  margin: auto;
-  letter-spacing: 1px;
-  cursor: pointer;
-  width: 100%;
-  max-width: 200px;
-}
-
-.inptBtn:hover {
-  background: #1c4163;
-  color: white;
 }
 
 .contact-detail span a {
