@@ -8,7 +8,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/vendor/");
   eleventyConfig.addPassthroughCopy("src/webfonts/");
   eleventyConfig.addPassthroughCopy("src/style.css");
-
   eleventyConfig.addWatchTarget("src/css/");
   eleventyConfig.addWatchTarget("src/style.css");
   eleventyConfig.addWatchTarget("src/js/");
