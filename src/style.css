@@ -2750,6 +2750,7 @@ header.header {
 }
 
 @media only screen and (max-width: 991px) {
+
   header.header,
   .quote-container {
     display: none;
@@ -3676,7 +3677,6 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .heading-layout1 {
-  text-align: center;
   margin-bottom: 40px;
 }
 
