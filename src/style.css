@@ -92,8 +92,8 @@ CSS INDEX
 
 html {
   height: 100%;
-  font-size: 0.45rem;
-  font-size: clamp(0.45rem, 0.35rem + 0.5000000000000001vw, 0.65rem);
+  font-size: 0.55rem;
+  font-size: clamp(0.55rem, 0.5rem + 0.24999999999999997vw, 0.65rem);
 }
 
 body {
@@ -141,74 +141,6 @@ h5 {
 
 h1 {
   font-size: 46px;
-}
-
-@media only screen and (max-width: 1199px) {
-  h1 {
-    font-size: 40px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  h1 {
-    font-size: 38px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  h1 {
-    font-size: 34px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  h1 {
-    font-size: 32px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  h1 {
-    font-size: 30px;
-  }
-}
-
-h2 {
-  font-size: 36px;
-}
-
-@media only screen and (max-width: 1199px) {
-  h2 {
-    font-size: 32px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  h2 {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  h2 {
-    font-size: 28px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  h2 {
-    font-size: 26px;
-  }
-}
-
-h3 {
-  font-size: 22px;
-}
-
-@media only screen and (max-width: 767px) {
-  h3 {
-    font-size: 20px;
-  }
 }
 
 h4 {
@@ -2818,7 +2750,8 @@ header.header {
 }
 
 @media only screen and (max-width: 991px) {
-  header.header {
+  header.header,
+  .quote-container {
     display: none;
   }
 }
