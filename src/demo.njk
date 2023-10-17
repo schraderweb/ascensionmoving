@@ -1,0 +1,127 @@
+---
+layout: layouts/base.njk
+title: Ascension Moving, LLC. | New Web Site Coming Soon!
+---
+
+<div class="container-fluid p-0">
+    <div class="row no-gutters">
+        <div class="col-md-12">
+            <div class="position-relative col-md-12"
+                style=" background: linear-gradient(to right, rgba(0, 24, 46,250), rgba(0, 32, 54, 0)), url('/images/hero-ascencionmovers.jpg'); background-size: cover; background-position: top center; height: 750px;">
+                <div class="d-flex align-items-center justify-content-center h-100 mx-auto px-4"
+                    style="max-width: 225ch;">
+                    <div class="text-center">
+                        <h1 class="text-light display-1 font-weight-bolder">
+                            Your Move,<br> Your Way!
+                        </h1>
+                        <div class="text-light" style="font-size: 2.5rem">
+                            Moving Services In Traverse City, Michigan
+                        </div>
+                        <div class="slider-btn-area mt-5">
+                            <a href="contact-us.html" class="btn btn-outline-danger font-weight-bolder"
+                                style="font-size: 1.8rem">GET STARTED NOW
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center quote-container ml-auto">
+                        <div class="card border-none" style="width: 38rem; opacity: 80%; border-radius: 20px">
+                            <div class="card-header display-4"
+                                style="background-color: #cf2e2e;border-top-left-radius: 20px;border-top-right-radius: 20px">
+                                Request My Quote
+                            </div>
+                            <div class="card-body text-dark">
+                                <form>
+                                    <div class="form-group row p-2">
+                                        <div class="col-12">
+                                            <input type="text" placeholder="First Name*"
+                                                class="form-control-lg w-100 border-primary" name="first_name"
+                                                data-error="First Name field is required" required />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row p-2">
+                                        <div class="col-12">
+                                            <input type="text" placeholder="Last Name*"
+                                                class="form-control-lg w-100 border-primary" name="last_name"
+                                                data-error="Last Name field is required" required />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row p-2">
+                                        <div class="col-12">
+                                            <input type="email" placeholder="E-mail*"
+                                                class="form-control-lg w-100 border-primary" name="email"
+                                                data-error="email field is required" required />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row p-2">
+                                        <div class="col-12">
+                                            <input type="text" placeholder="Phone*"
+                                                class="form-control-lg w-100 border-primary" name="phone"
+                                                data-error="Phone field is required" required />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row p-2">
+                                        <div class="col-12">
+                                            <input type="text" placeholder="Current Zip Code*"
+                                                class="form-control-lg w-100 border-primary" name="last_name"
+                                                data-error="Zip code field is required" required />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row p-2">
+                                        <div class="col-12">
+                                            <input type="text" id="datepicker"
+                                                class="form-control-lg w-100 border-primary"
+                                                placeholder="Select a date">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row p-2">
+                                        <div class="col-12 align-items-start">
+                                            <label for="exampleFormControlSelect1" class="mx-0">Are you Active Duty
+                                                Military ?</label>
+                                            <select class="form-control-lg w-100 border-primary bg-transparent"
+                                                id="exampleFormControlSelect1" required>
+                                                <option> Please Select </option>
+                                                <option>Yes</option>
+                                                <option>No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 form-group">
+                                        <a href="/contact-us.html">
+                                            <button type="submit" class="fw-btn-fill bg-Primary text-textprimary">
+                                                Click to Send<i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <!--                        </div>-->
+                                    <div class="form-response"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include "components/sections/checklist.html" %}
+
+{% include "components/sections/card_grid.html" %}
+
+{% include "components/sections/testimonials.html" %}
+
+{% include "components/sections/review.html" %}
+
+{% include "components/sections/service_area.html" %}
+
+{% include "components/sections/map.html" %}

@@ -41,7 +41,8 @@
     <script src="/js/modernizr-3.7.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker.min.css"
+        rel="stylesheet">
 
 </head>
 
@@ -54,18 +55,15 @@
     <!-- Preloader Start Here -->
     <div id="preloader"></div>
     <!-- Preloader End Here -->
+
     <div id="wrapper" class="wrapper">
-        <!-- Add your site or application content here -->
-        <!-- Header Area Start Here -->
-<!--        {% include "header.html" %}-->
-        <!-- Header Area End Here -->
+        {% include "components/header.html" %}
 
         {{ content | safe }}
 
-        <!-- Footer Area Start Here -->
-<!--        {% include "footer.html" %}-->
-        <!-- Footer Area End Here -->
+        {% include "components/footer.html" %}
     </div>
+
     <!-- jquery-->
     <script src="/js/jquery-3.3.1.min.js"></script>
     <!-- Plugins js -->
@@ -100,7 +98,8 @@
     <!-- Main js -->
     <script src="/js/main.js"></script>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -108,7 +107,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#datepicker').datepicker({
                 format: 'mm/dd/yyyy', // Date format
                 autoclose: true, // Automatically close the datepicker when a date is selected
