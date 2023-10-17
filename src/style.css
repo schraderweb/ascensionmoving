@@ -15129,12 +15129,6 @@ img.zoom {
 *
 */
 
-.intro-right {
-  min-height: 500px;
-  background: url("../img/pexels-photo-40120.jpg") center center no-repeat;
-  background-size: cover;
-}
-
 .credit {
   margin-top: 3rem;
   font-size: 0.8rem;
