@@ -2,15 +2,15 @@
 
 ## Phone Number
 
-The phone numbers have to be updated inside `/src/index.html`, `/src/contact-us.njk`, `/src/_includes/components/header.html`, and `/src/_includes/components/callus.html`
+The phone number has to be updated inside `/src/index.html`, `/src/contact-us.njk`, `/src/_includes/components/header.html`, and `/src/_includes/components/callus.html`
 
 ## Address
 
-The addresses are located inside `/src/_includes/components/footer.html` and `/src/contact-us.njk` if you want to change them
+The address has to be updated inside `/src/_includes/components/footer.html` and `/src/contact-us.njk`
 
 ## Email
 
-The email has to be updated inside `/src/contact-us.njk`
+The email has to be update inside `/src/contact-us.njk`
 
 ## FAQ
 
