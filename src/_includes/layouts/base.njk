@@ -127,6 +127,43 @@
             dropdownMenu.style.display = 'none';
         }
     </script>
+
+ <!--popup_form end-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/moment.min.js"></script>
+    <script src="js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/plugins/jquery.form.js"></script>
+    <script src="js/plugins/jquery.validate.min.js"></script>
+    <script src="js/plugins/slick.min.js"></script>
+    <script src="js/plugins/custom-tabs.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      
+    $('#contact-form').on('submit', function(event) {
+    event.preventDefault(); // prevent reload
+    
+    var formData = new FormData(this);
+    formData.append('service_id', 'service_rzf5dss');
+    formData.append('template_id', 'template_k8cj439');
+    formData.append('user_id', 'KBwoBgWenRXbso0Z3');
+ 
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+        type: 'POST',
+        data: formData,
+        contentType: false, // auto-detection
+        processData: false // no need to parse formData to string
+    }).done(function() {
+        window.location.href="thanks.html";
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+    });
+});
+     
+    </script>
+
 </body>
 
 </html>
