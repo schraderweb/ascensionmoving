@@ -2748,14 +2748,40 @@ header.header {
   position: relative;
   z-index: 15;
 }
-
+.navbar-brand-for-mobile{
+  display: none;
+}
 @media only screen and (max-width: 991px) {
-
-  header.header,
-  .quote-container {
+  .quote-container , .contact-us , .phone-number i , .phone-number a , .careers , .navbar-brand{
     display: none;
   }
+  .navbar-brand-for-mobile{
+    display: block;
+  }  
+  .navbar {
+    padding: 0;
+  }
+  .lets-talk-button{
+    margin-bottom: 5px;
+  }
+ 
+  .dropdown-toggle i {
+    font-size: 0.9em;
+    color: black;
+  }
 }
+
+
+.navbar-toggler {
+  border: 0.5px solid #fff !important; 
+  border-radius: 4px; 
+}
+
+.navbar-toggler-icon {
+  filter: brightness(500%) invert(1); 
+}
+
+
 
 .logo-area a {
   display: block;

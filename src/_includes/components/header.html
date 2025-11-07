@@ -5,35 +5,39 @@
       style="background-color: #cf2e2e;">
       <div class="w-100 flex-row d-flex align-items-center justify-content-between mx-auto text-2xl"
         style="max-width: 175ch;">
+        <a class="navbar-brand-for-mobile" href="/">
+          <img class="" src="/images/logo.jpg" width="90" height="90" alt="ascensionmoving">
+        </a>
         <div class="phone-number d-flex align-items-center justify-content-between text-white text-lg-right">
           <i class="flaticon-call-answer text-white mr-3"></i>
           <a class="mr-5 text-white font-weight-bold">
-            (231) 342-9505 
+            (231) 342-9505
           </a>
         </div>
 
         <div class="d-flex align-items-end">
-          <a href="/careers" class="text-white mr-5 font-weight-bold">
+          <a href="/careers" class="text-white mr-5 font-weight-bold careers " >
             Careers
           </a>
-          <a href="/contact-us" class=" text-white font-weight-bold">
+          <a href="/contact-us" class=" text-white font-weight-bold contact-us">
             Contact Us
           </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
       </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav d-flex align-items-center text-xl ml-auto mr-auto">
 
           <a class="navbar-brand" href="/">
             <img class="ml-5" src="/images/logo.jpg" width="250" height="250" alt="ascensionmoving">
           </a>
-          
+
           <li class="nav-item active mx-1">
             <div class="dropdown base-color" onmouseenter="showDropdown('movingServices')"
               onmouseleave="hideDropdown('movingServices')">
@@ -55,11 +59,13 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item base-color hover-accent" href="/storage-declutter">Storage & Declutter</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item base-color hover-accent" href="/apartment-condo-moving">Apartment & Condo Moving</a>
+                <a class="dropdown-item base-color hover-accent" href="/apartment-condo-moving">Apartment & Condo
+                  Moving</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item base-color hover-accent" href="/senior-moving">Senior Moving</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item base-color hover-accent" href="/specialty-moving-services">Specialty Moving Services</a>
+                <a class="dropdown-item base-color hover-accent" href="/specialty-moving-services">Specialty Moving
+                  Services</a>
               </div>
             </div>
           </li>
@@ -70,17 +76,23 @@
               <button class="btn btn-outline-light dropdown-toggle " type="button" aria-expanded="false"
                 style="font-size: 1.2em">
                 <span class="base-color font-weight-bold">Locations</span>
+<span class="ml-2 d-lg-none">
+    <i class="fas fa-chevron-down"></i>
+  </span>
               </button>
               <div class="dropdown-menu bg-light rounded p-3" id="locations" style="font-size: 1.2em"
                 onmouseenter="showDropdown('locations')" onmouseleave="hideDropdown('locations')">
-                <a class="dropdown-item base-color hover-accent" href="/service-area/traverse-city-moving-services">Traverse City, MI</a>
+                <a class="dropdown-item base-color hover-accent"
+                  href="/service-area/traverse-city-moving-services">Traverse City, MI</a>
                 <div class="dropdown-divider"></div>
                 <div class="btn-group dropright" onmouseenter="showDropdown('dallasTX')">
-                  <a class="dropdown-item base-color hover-accent" href="/service-area/kingsley-moving-services">Kingsley, MI</a>
+                  <a class="dropdown-item base-color hover-accent"
+                    href="/service-area/kingsley-moving-services">Kingsley, MI</a>
                 </div>
                 <div class="dropdown-divider"></div>
                 <div class="btn-group dropright" onmouseenter="showDropdown('laudraleAX')">
-                  <a class="dropdown-item base-color hover-accent" href="/service-area/kalkaska-moving-services">Kalkaska, MI</a>
+                  <a class="dropdown-item base-color hover-accent"
+                    href="/service-area/kalkaska-moving-services">Kalkaska, MI</a>
                 </div>
               </div>
             </div>
@@ -100,7 +112,7 @@
 
           <li class=" mx-1">
             <a href="/contact-us" class="m-3">
-              <button type="submit" class="btn-fill-md text-textprimary" style="background-color: #cf2e2e;">
+              <button type="submit" class="btn-fill-md text-textprimary lets-talk-button" style="background-color: #cf2e2e;">
                 Let's Talk<i class="fas fa-chevron-right"></i>
               </button>
             </a>
