@@ -15564,8 +15564,7 @@ a.text-primary:focus {
 .review-track {
   display: flex;
   gap: 20px;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   padding: 10px 4px 20px 4px;
@@ -15576,7 +15575,6 @@ a.text-primary:focus {
 
 .review-card {
   flex: 0 0 calc(33.333% - 14px);
-  scroll-snap-align: start;
   background: #ffffff;
   border-radius: 18px;
   padding: 26px 24px;

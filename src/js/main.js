@@ -716,7 +716,7 @@
     visibleCount = getVisible();
     const pages = total - visibleCount + 1;
     current = Math.max(0, Math.min(index, pages - 1));
-    const cardW = cards[0].offsetWidth + 20; // Matches 20px gap in CSS
+    const cardW = cards[0].getBoundingClientRect().width + 20; // Matches 20px gap in CSS
     track.scrollTo({ left: cardW * current, behavior: 'smooth' });
     var dots = dotsWrap.querySelectorAll('.review-dot');
     for (var i = 0; i < dots.length; i++) {
@@ -746,7 +746,7 @@
   nextBtn.addEventListener('click', function() { next(); resetAuto(); });
 
   track.addEventListener('scroll', function() {
-    var cardW = cards[0].offsetWidth + 20;
+    var cardW = cards[0].getBoundingClientRect().width + 20;
     current = Math.round(track.scrollLeft / cardW);
     var dots = dotsWrap.querySelectorAll('.review-dot');
     for (var i = 0; i < dots.length; i++) {
