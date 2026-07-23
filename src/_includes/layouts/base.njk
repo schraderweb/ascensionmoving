@@ -150,18 +150,14 @@
         }
     </script>
 
- <!--popup_form end-->
-    <script src="js/plugins/bootstrap.min.js"></script>
-    <script src="js/plugins/moment.min.js"></script>
-    <script src="js/plugins/bootstrap-datetimepicker.min.js"></script>
-    <script src="js/plugins/jquery.form.js"></script>
-    <script src="js/plugins/jquery.validate.min.js"></script>
-    <script src="js/plugins/slick.min.js"></script>
-    <script src="js/plugins/custom-tabs.js"></script>
-    <script src="js/forms.js"></script>
-    <script src="js/scripts.js"></script>
-
-
+    <script>
+        $(window).on('load', function () {
+            $('#preloader').fadeOut('slow', function () { $(this).remove(); });
+        });
+        setTimeout(function () {
+            $('#preloader').fadeOut('slow', function () { $(this).remove(); });
+        }, 1200);
+    </script>
 </body>
 
 </html>

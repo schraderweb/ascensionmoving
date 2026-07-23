@@ -680,3 +680,88 @@
     });
   });
 })(jQuery);
+/* ── Review Carousel ── */
+(function() {
+  const track    = document.getElementById('reviewTrack');
+  const dotsWrap = document.getElementById('reviewDots');
+  const prevBtn  = document.getElementById('reviewPrev');
+  const nextBtn  = document.getElementById('reviewNext');
+  if (!track || !dotsWrap || !prevBtn || !nextBtn) return;
+
+  const cards = track.querySelectorAll('.review-card');
+  let current = 0;
+  let autoTimer = null;
+  const total = cards.length;
+  if (total === 0) return;
+
+  function getVisible() {
+    return window.innerWidth < 576 ? 1 : window.innerWidth < 992 ? 2 : 3;
+  }
+
+  let visibleCount = getVisible();
+
+  function buildDots() {
+    visibleCount = getVisible();
+    dotsWrap.innerHTML = '';
+    const pages = total - visibleCount + 1;
+    for (let i = 0; i < pages; i++) {
+      const d = document.createElement('span');
+      d.className = 'review-dot' + (i === current ? ' active' : '');
+      d.addEventListener('click', function() { goTo(i); resetAuto(); });
+      dotsWrap.appendChild(d);
+    }
+  }
+
+  function goTo(index) {
+    visibleCount = getVisible();
+    const pages = total - visibleCount + 1;
+    current = Math.max(0, Math.min(index, pages - 1));
+    const cardW = cards[0].offsetWidth + 20; // Matches 20px gap in CSS
+    track.scrollTo({ left: cardW * current, behavior: 'smooth' });
+    var dots = dotsWrap.querySelectorAll('.review-dot');
+    for (var i = 0; i < dots.length; i++) {
+      dots[i].classList.toggle('active', i === current);
+    }
+  }
+
+  function next() {
+    goTo(current + 1 < total - visibleCount + 1 ? current + 1 : 0);
+  }
+
+  function prev() {
+    goTo(current > 0 ? current - 1 : total - visibleCount);
+  }
+
+  function startAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(next, 4000); // 4 seconds
+  }
+
+  function resetAuto() {
+    clearInterval(autoTimer);
+    startAuto();
+  }
+
+  prevBtn.addEventListener('click', function() { prev(); resetAuto(); });
+  nextBtn.addEventListener('click', function() { next(); resetAuto(); });
+
+  track.addEventListener('scroll', function() {
+    var cardW = cards[0].offsetWidth + 20;
+    current = Math.round(track.scrollLeft / cardW);
+    var dots = dotsWrap.querySelectorAll('.review-dot');
+    for (var i = 0; i < dots.length; i++) {
+      dots[i].classList.toggle('active', i === current);
+    }
+  });
+
+  // Pause on hover or touch
+  track.parentElement.addEventListener('mouseenter', function() { clearInterval(autoTimer); });
+  track.parentElement.addEventListener('mouseleave', startAuto);
+  track.addEventListener('touchstart', function() { clearInterval(autoTimer); });
+  track.addEventListener('touchend', startAuto);
+
+  window.addEventListener('resize', function() { buildDots(); goTo(0); });
+
+  buildDots();
+  startAuto();
+})();
